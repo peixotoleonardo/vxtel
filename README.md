@@ -57,6 +57,8 @@ $ npm run test:e2e
 # test coverage
 $ npm run test:cov
 ```
+## Swagger
+To view swagger access the adress http://localhost:[port]/docs
 
 ## Support
 
