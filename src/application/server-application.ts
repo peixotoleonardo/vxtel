@@ -29,7 +29,10 @@ export class ServerApplication {
   }
 
   start() {
-    return this.app.listen(this.configService.get<number>('app.port'));
+    return this.app.listen(
+      this.configService.get<number>('app.port'),
+      this.configService.get<string>('app.host')
+    );
   }
 
   public static async create(): Promise<ServerApplication> {
